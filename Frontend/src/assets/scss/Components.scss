@@ -1,0 +1,159 @@
+.container-descriptions{
+    max-width: 85%;
+    width: 100%;
+}
+
+.font-size-20{
+    font-size: 20px;
+}
+
+.font-size-25{
+    font-size: 25px;
+}
+
+.font-size-30{
+    font-size: 30px;
+}
+
+.font-size-35{
+    font-size: 35px;
+}
+
+.font-size-40{
+    font-size: 40px;
+}
+
+.font-size-45{
+    font-size: 45px;
+}
+.font-size-50{
+    font-size: 50px;
+}
+.font-size-55{
+    font-size: 55px;
+}
+.font-size-60{
+    font-size: 60px;
+
+    @media screen and (max-width: 700px){
+        font-size: 35px;
+    }
+}
+
+
+
+.container-carrousel{
+    display: flex;
+
+    @media screen and (max-width: 700px){
+        flex-direction: column;
+        padding: 60px;
+    }
+
+    img{
+        max-width: 39%;
+        width: 100%;
+    }
+
+    .descriptions{
+        font-size: 26px;
+    }
+
+    .subtitle{
+        font-size: 30px !important;
+    }
+}
+
+.style-carousel{
+    max-width: 70%;
+    width: 100%;
+
+    @media screen and (max-width: 700px){
+        height: 500px !important
+    }
+}
+
+
+
+
+
+.container-Explaning-section{
+    display: flex;
+
+    .container-left-img{
+        display: block;
+        max-width: 50%;
+        width: 100%;
+        
+        @media screen and(max-width: 700px){
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .img-size{
+            display: block;
+            max-width: 100%;
+            width: 560px;
+
+            @media screen and(max-width: 700px){
+                max-width: 90%;
+                width: 100%;
+            }
+        }
+    }
+
+    .container-rigth-text{
+        display: block;
+        max-width: 43%;
+        width: 100%;
+        text-align: justify;
+        padding: 20px;
+                
+        @media screen and(max-width: 700px){
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.container-app-section{
+    display: flex;
+    max-width: 80%;
+    width: 100%;
+
+    @media screen and(max-width: 700px){
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .container-right-img{
+        display: block;
+        padding: 25px;
+        max-width: 50%;
+        width: 100%;
+        
+        @media screen and(max-width: 700px){
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+
+    .container-left-text{
+        display: block;
+        max-width: 43%;
+        width: 100%;
+        text-align: justify;
+        padding: 20px;
+                
+        @media screen and(max-width: 700px){
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .img-size{
+            display: block;
+            max-width: 100%;
+            width: 560px;
+        }
+    }
+}

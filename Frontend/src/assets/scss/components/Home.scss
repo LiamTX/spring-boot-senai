@@ -1,0 +1,39 @@
+.container-home-intro{
+    display: flex;
+    max-width: 100%;
+
+    .container-left-texts{
+        max-width: 100%;
+        width: 100%;
+
+        .text-intro{
+            max-width: 80%;
+            display: block;
+            margin-top: 100px;
+            margin-left: auto;
+
+            @media screen and(max-width: 700px){
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+    
+    .container-rigth-image{
+        max-width: 100%;
+        width: 100%;
+        
+    }
+}
+
+.img-size-home{
+    width: 1190px;
+    
+    @media screen and(max-width: 1000px){
+        width: 300px;
+    }
+}
+.icon-size-home{
+    max-width: 65%;
+    height: 900px;
+}

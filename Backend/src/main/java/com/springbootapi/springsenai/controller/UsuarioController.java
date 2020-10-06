@@ -18,16 +18,17 @@ public class UsuarioController {
     private UsuarioRepo repo;
 
     @GetMapping
+    @CrossOrigin
     public List<Usuario> listUsuario(){
         List<Usuario> usuarios = (List<Usuario>) repo.findAll();
         for(int i = 0; i < usuarios.size(); i++){
             Usuario user = usuarios.get(i);
-            user.setSenha(null);
         };
         return usuarios;
     }
 
     @PostMapping
+    @CrossOrigin
     public Object create(@RequestBody Usuario user){
         try {
             return repo.save(user);
@@ -38,11 +39,13 @@ public class UsuarioController {
     }
 
     @PutMapping("/{id}")
+    @CrossOrigin
     public Object update(@RequestBody Usuario newUser, @PathVariable int id){
         try{
             Usuario user = repo.findById(id).get();
 
             user.setNome(newUser.getNome());
+            user.setEmail(newUser.getEmail());
             user.setSenha(newUser.getSenha());
 
             return repo.save(user);
@@ -53,6 +56,7 @@ public class UsuarioController {
     }
 
     @DeleteMapping("/{id}")
+    @CrossOrigin
     public Boolean delete(@PathVariable int id){
         try{
             repo.deleteById(id);
@@ -64,6 +68,7 @@ public class UsuarioController {
     }
 
     @GetMapping("/{id}")
+    @CrossOrigin
     public Object getById(@PathVariable int id){
         try {
             Usuario user = repo.findById(id).get();
